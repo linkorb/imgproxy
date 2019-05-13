@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  imgproxy:
+    image: "darthsim/imgproxy"
+    restart: always
+    network_mode: host
+    environment:
+      IMGPROXY_PRESETS: sharp=sharpen:0.7,t=resize:fill:320:320:0/gravity:sm
+
+      IMGPROXY_KEY: hex-encoded key;
+      IMGPROXY_SALT: hex-encoded salt;
+    ports:
+      - '8080:8080'
