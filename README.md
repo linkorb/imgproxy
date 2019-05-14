@@ -4,6 +4,11 @@ The main principles of imgproxy are simplicity, speed, and security.
 
 **[imgproxy document](https://github.com/imgproxy/imgproxy#documentation)** for more detials.
 
+## Installation
+ ```bash
+   composer require linkorb/imgproxy
+ ```
+
 
 ## Setup
 
