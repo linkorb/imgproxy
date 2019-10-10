@@ -5,13 +5,12 @@ ini_set('display_errors', 1);
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-use Symfony\Component\Dotenv\Dotenv;
+use Envoi\Envoi;
 
+// .env validate it.
 $envFilename = __DIR__.'/../.env';
-if (file_exists($envFilename)) {
-    $dotenv = new Dotenv();
-    $dotenv->load($envFilename);
-}
+$envMetaFile = __DIR__.'/../.env.yaml';
+Envoi::init($envFilename, $envMetaFile, true);
 
 $key = getenv('IMGPROXY_KEY');
 $salt = getenv('IMGPROXY_SALT');

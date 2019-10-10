@@ -17,6 +17,11 @@
             "name": "LinkORB",
             "email": "engineering@linkorb.com",
             "role": "Development"
+        },
+        {
+            "name": "kaushik prajapati",
+            "email": "prajapatikaushik@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
