@@ -9,12 +9,13 @@ The main principles of imgproxy are simplicity, speed, and security.
    composer require linkorb/imgproxy
  ```
 
-
 ## Setup
-
-1. composer install
-1. copy env.dist to .env file.
-1. setting in .env file.
+```sh
+composer install # install php dependencies
+cp .env.dist .env # Create config file from template/.dist file
+edit .env # Edit configuration, database settings etc
+./vendor/bin/envoi validate  # Run command validate based on meta file .env.yaml
+```
 
 ## Generate credentials
 If you need a random key/salt pair real fast, you can quickly generate it using, for example, the following snippet

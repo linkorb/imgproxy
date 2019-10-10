@@ -17,9 +17,16 @@
             "name": "LinkORB",
             "email": "engineering@linkorb.com",
             "role": "Development"
+        },
+        {
+            "name": "kaushik prajapati",
+            "email": "prajapatikaushik@gmail.com",
+            "role": "Developer"
         }
     ],
-    "require": {},
+    "require": {
+        "linkorb/envoi": "^1.1"
+    },
     "require-dev": {
         "symfony/dotenv": "^4.0"
     },
